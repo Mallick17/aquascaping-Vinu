@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AquaAges</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Presento
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">AquaAges</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="margin: 0; padding: 0; height: 100vh;">
+      <div class="video-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
+        <video autoplay muted loop data-aos="fade-in" style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="assets/img/home-1st-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>    
+        <div class="overlay-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;filter: brightness(1.3) contrast(1.5);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <h2 data-aos="fade-up" data-aos-delay="100">Unveil the Timeless Elegance of Aquascaping</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">Transform your space with nature’s finest aquatic artistry.</p>
+                        <div class="d-flex mt-4 justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                          <a href="#about" class="btn-get-started">Get Started</a>
+                          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "spaceBetween": 20,     
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20    
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 40
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 60
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-9.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section section-bg dark-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Aquascaping involves designing and arranging aquatic environments, primarily in aquariums, to create visually appealing and functional displays. Services provided in the field of aquascaping cater to both beginners and advanced enthusiasts.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-briefcase icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Aquascaping Design Consultation</a></h4>
+                <p class="description">Professional guidance to create custom aquascapes based on the client's preferences (nature-inspired, modern, minimalistic, etc.).</p>
+                <p class="description">Layout ideas for the optimal use of space, plants, hardscape elements (rocks, driftwood), and aquatic creatures.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Custom Aquascaping Installation</a></h4>
+                <p class="description">Full setup of aquariums, including arranging plants, stones, driftwood, and substrate.</p>
+                <p class="description">Sourcing and placing aquatic plants, mosses, and other materials.</p>
+                <p class="description">Custom-built tanks or pre-built setups tailored to specific themes or sizes.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Aquascaping Workshops and Education</a></h4>
+                <p class="description">Offering lessons and training for individuals or groups to learn aquascaping techniques, plant care, tank maintenance, and workshops to teach aquascaping fundamentals, design principles, and advanced techniques like Iwagumi, Dutch, and Nature Aquascaping.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-binoculars icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Hardscape Design and Sourcing</a></h4>
+                <p class="description">Sourcing high-quality hardscape materials like rocks, driftwood, substrates, and gravel that enhance the natural beauty of the aquascape.Designing layouts with these materials to create visually stunning, balanced environments.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Fish and Plant Health Services & Selection</a></h4>
+                <p class="description">Diagnosing and treating fish and plant diseases.Offering advice on creating optimal conditions for plant growth and fish health.</p>
+                <p class="description">Expert advice on selecting plants that thrive in specific water conditions (freshwater, saltwater, brackish) and suitable fish species that complement the design. Sourcing rare or specific plant and fish species.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Lighting and Equipment Setup</a></h4>
+                <p class="description">Installation and customization of aquarium lighting, ensuring proper intensity and spectrum for plant growth and fish health.Equipment recommendations (filters, CO2 systems, air pumps) to support the aquascaping environment.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section section-bg dark-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-0">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Basic need to be known and Most asked questions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What is aquascaping?</h3>
+                <div class="faq-content">
+                  <p>Aquascaping is the art of designing and arranging aquatic plants, rocks, and other natural elements in an aquarium to create a beautiful and harmonious underwater landscape.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What do I need to start aquascaping?</h3>
+                <div class="faq-content">
+                  <p>You'll need an aquarium, a substrate (such as gravel or soil), plants, hardscape materials (rocks, driftwood), water, a filtration system, lighting, and CO2 supplementation if you plan on growing high-maintenance plants.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I plan an aquascape design?</h3>
+                <div class="faq-content">
+                  <p>Start by considering the style you want (e.g., Iwagumi, Nature, Dutch). Use elements like the rule of thirds, the golden ratio, and focal points. Think about plant height, leaf color, and the use of hardscape to create depth and contrast.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do I need to use CO2 for my aquascape?</h3>
+                <div class="faq-content">
+                  <p>CO2 is essential for growing many types of aquatic plants, especially in high-light, nutrient-rich setups. Low-tech aquascapes with slower-growing plants may not require CO2 supplementation.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I maintain the aquascape?</h3>
+                <div class="faq-content">
+                  <p>Regular maintenance includes pruning plants, cleaning algae, checking water parameters (pH, hardness, ammonia, nitrites, and nitrates), replacing water, and maintaining filtration systems.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What size aquarium should I choose?</h3>
+                <div class="faq-content">
+                  <p>The size depends on the space available and the types of fish or plants you want to keep. Beginners often start with a 20-40 gallon tank, which offers a manageable volume and more stability for water conditions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What filtration system should I use?</h3>
+                <div class="faq-content">
+                  <p>The filtration system should be suitable for the tank size and type of aquarium. For planted tanks, a canister filter is often preferred as it provides powerful filtration without disturbing plant growth. For fish-only setups, hang-on-back (HOB) filters or sponge filters can work well.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What substrate should I use?</h3>
+                <div class="faq-content">
+                  <p>The substrate depends on the type of plants you're keeping. For planted aquariums, nutrient-rich soil or specialized substrates like ADA Aqua Soil are ideal. For non-planted tanks, you can use gravel, sand, or crushed coral.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I cycle my aquarium?</h3>
+                <div class="faq-content">
+                  <p>Cycling involves establishing beneficial bacteria that break down harmful ammonia and nitrites. This can take several weeks and involves adding an ammonia source (like fish food or pure ammonia) and monitoring the water parameters. A fishless cycle is the safest method.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              
+              <div class="faq-item">
+                <h3>How often should I change the water?</h3>
+                <div class="faq-content">
+                  <p>Typically, 25-30% of the water should be changed every 1-2 weeks, depending on the tank's stocking level and filtration system. More frequent water changes may be necessary for tanks with higher bio-loads.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What fish can I keep in a planted tank?</h3>
+                <div class="faq-content">
+                  <p>Many species of fish can coexist with plants, such as tetras, guppies, bettas, and Corydoras. However, avoid fish that are known to uproot plants, like goldfish or certain cichlids.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I choose the right plants for my aquarium?</h3>
+                <div class="faq-content">
+                  <p>Choose plants based on your tank's lighting and CO2 availability. Low-light plants like Anubias, Java Fern, and Cryptocoryne are great for beginners. For a high-tech setup, you can include fast-growing plants like Rotala, Glossostigma, and Hemianthus.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can I keep snails or shrimp in my aquarium?</h3>
+                <div class="faq-content">
+                  <p>Yes, snails and shrimp can be beneficial in aquariums. Snails help clean up algae, while shrimp (like Amano shrimp or Cherry shrimp) can help with algae and detritus. Just be mindful of the fish species, as some might eat them.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Why are my plants not growing well?</h3>
+                <div class="faq-content">
+                  <p>Plant health can be affected by insufficient light, CO2, nutrients, or poor water conditions. Ensure your plants have the right balance of these factors, and consider dosing liquid fertilizers if needed.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What should my water parameters be for a healthy aquarium?</h3>
+                <div class="faq-content">
+                  <p>Ideal parameters can vary depending on the species of fish and plants, but common ranges are:<br>pH: 6.5–7.5<br>Ammonia: 0 ppm<br>Nitrites: 0 ppm<br>Nitrates: Below 20 ppm for planted tanks (up to 50 ppm for fish-only)<br>Temperature: 72-78°F (22-26°C) for tropical fish</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How can I prevent algae growth?</h3>
+                <div class="faq-content">
+                  <p>Algae thrive on excess nutrients and light. To prevent algae, reduce lighting to 8-10 hours a day, avoid overfeeding, maintain proper water changes, and ensure adequate plant growth to compete with algae for nutrients.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I test aquarium water?</h3>
+                <div class="faq-content">
+                  <p>You can use liquid test kits or test strips to measure water parameters. Key parameters to test are ammonia, nitrites, nitrates, pH, hardness (GH and KH), and temperature.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What is the nitrogen cycle in an aquarium?</h3>
+                <div class="faq-content">
+                  <p>The nitrogen cycle refers to the process in which ammonia from fish waste and decomposing food is converted to nitrites and then to nitrates by beneficial bacteria. This cycle is crucial for maintaining a stable and healthy environment for your aquarium's inhabitants.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Why is my aquarium water cloudy?</h3>
+                <div class="faq-content">
+                  <p>Cloudy water can result from several factors, including an early stage of the nitrogen cycle, overfeeding, poor filtration, or the presence of algae. Ensure the filter is working properly and reduce feeding.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What should I do if my fish are sick?</h3>
+                <div class="faq-content">
+                  <p>Identify the symptoms (e.g., spots, lesions, abnormal behavior) and check water parameters. You may need to quarantine the affected fish and treat them with appropriate medications based on the illness. Regular water changes and maintaining optimal water quality can help prevent disease outbreaks.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How can I prevent fish stress?</h3>
+                <div class="faq-content">
+                  <p>Fish stress can be caused by poor water quality, overcrowding, incompatible tank mates, or sudden changes in temperature or lighting. Provide a calm environment, keep water parameters stable, and ensure a proper tank size.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">AquaAges</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>450, 80 Feet Road, 15th cross,Narayana Nagar 1st block, Doddakallasandra, Bengaluru, </p>
+            <p>Karnataka, IN 560062</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 958 505 9399</span></p>
+            <p><strong>Email:</strong> <span>vinusk.94@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/aqua_ages/"><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Aquascaping Installation</a></li>
+            <li><a href="#">Workshops & Education</a></li>
+            <li><a href="#">Fish and Plants</a></li>
+            <li><a href="#">Lighting and Equipments</a></li>
+            <li><a href="#">Design and Sourcing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">AquaAges</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
